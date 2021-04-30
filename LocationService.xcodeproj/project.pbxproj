@@ -15,6 +15,7 @@
 		9504EB1C263B9FB500C1220E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9504EB1A263B9FB500C1220E /* LaunchScreen.storyboard */; };
 		9504EB27263B9FB600C1220E /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504EB26263B9FB600C1220E /* LocationServiceTests.swift */; };
 		9504EB32263B9FB600C1220E /* LocationServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504EB31263B9FB600C1220E /* LocationServiceUITests.swift */; };
+		9504EB43263BAFA800C1220E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504EB42263BAFA800C1220E /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9504EB2D263B9FB600C1220E /* LocationServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9504EB31263B9FB600C1220E /* LocationServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceUITests.swift; sourceTree = "<group>"; };
 		9504EB33263B9FB600C1220E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9504EB42263BAFA800C1220E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9504EB18263B9FB500C1220E /* Assets.xcassets */,
 				9504EB1A263B9FB500C1220E /* LaunchScreen.storyboard */,
 				9504EB1D263B9FB500C1220E /* Info.plist */,
+				9504EB42263BAFA800C1220E /* LocationManager.swift */,
 			);
 			path = LocationService;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9504EB43263BAFA800C1220E /* LocationManager.swift in Sources */,
 				9504EB14263B9FB000C1220E /* ViewController.swift in Sources */,
 				9504EB10263B9FB000C1220E /* AppDelegate.swift in Sources */,
 				9504EB12263B9FB000C1220E /* SceneDelegate.swift in Sources */,
