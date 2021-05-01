@@ -50,8 +50,19 @@ class ViewController: UIViewController {
         // Shows the default area of the map
         // MKCoordinateRegion center - Set to the user's location
         // span - zooms in to the neighbourhood of the center by 0.1 longitude and latitude
-        map.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)), animated: true)
+        map.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), animated: true)
+        
+        // Passing the location from the LocationManager to the geocoder function in LocationManager.swift for reverse geocoding. The title will change accordingly to the reverse geocoding results.
+        LocationManager.shared.resolveLocationName(with: location){ [weak self] locationName in self?.title = locationName}
+    
+        
+        let annotation: MKPointAnnotation = MKPointAnnotation()
+        annotation.coordinate = location.coordinate
+            annotation.title = "You are here"
+        LocationManager.shared.resolveExactAddress(with: location){ [weak self] locationName in annotation.subtitle = locationName}
+       // annotation.subtitle = location.
+        map.addAnnotation(annotation)
+        
+        
     }
-
 }
-
